@@ -1,10 +1,13 @@
-  *,body,html{
+  *,
+  body,
+  html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins" , sans-serif;
+    font-family: "Poppins", sans-serif;
   }
-  .sidebar{
+
+  .sidebar {
     position: fixed;
     left: 0;
     top: 0;
@@ -15,31 +18,37 @@
     z-index: 99;
     transition: all 0.5s ease;
   }
-  .sidebar.open{
+
+  .sidebar.open {
     width: 250px;
   }
-  .sidebar .logo-details{
+
+  .sidebar .logo-details {
     height: 60px;
     display: flex;
     align-items: center;
     position: relative;
   }
-  .sidebar .logo-details .icon{
+
+  .sidebar .logo-details .icon {
     opacity: 0;
     transition: all 0.5s ease;
   }
-  .sidebar .logo-details .logo_name{
+
+  .sidebar .logo-details .logo_name {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
     opacity: 0;
     transition: all 0.5s ease;
   }
+
   .sidebar.open .logo-details .icon,
-  .sidebar.open .logo-details .logo_name{
+  .sidebar.open .logo-details .logo_name {
     opacity: 1;
   }
-  .sidebar .logo-details #btn{
+
+  .sidebar .logo-details #btn {
     position: absolute;
     top: 50%;
     right: 0;
@@ -51,10 +60,12 @@
     cursor: pointer;
     transition: all 0.5s ease;
   }
-  .sidebar.open .logo-details #btn{
+
+  .sidebar.open .logo-details #btn {
     text-align: right;
   }
-  .sidebar i{
+
+  .sidebar i {
     color: #fff;
     height: 60px;
     min-width: 50px;
@@ -62,16 +73,19 @@
     text-align: center;
     line-height: 60px;
   }
-  .sidebar .nav-list{
+
+  .sidebar .nav-list {
     margin-top: 20px;
     height: 100%;
   }
-  .sidebar li{
+
+  .sidebar li {
     position: relative;
     margin: 8px 0;
     list-style: none;
   }
-  .sidebar li .tooltip{
+
+  .sidebar li .tooltip {
     position: absolute;
     top: -20px;
     left: calc(100% + 15px);
@@ -87,17 +101,20 @@
     pointer-events: none;
     transition: 0s;
   }
-  .sidebar li:hover .tooltip{
+
+  .sidebar li:hover .tooltip {
     opacity: 1;
     pointer-events: auto;
     transition: all 0.4s ease;
     top: 50%;
     transform: translateY(-50%);
   }
-  .sidebar.open li .tooltip{
+
+  .sidebar.open li .tooltip {
     display: none;
   }
-  .sidebar input{
+
+  .sidebar input {
     font-size: 15px;
     color: #020202;
     font-weight: 400;
@@ -110,11 +127,13 @@
     transition: all 0.5s ease;
     background: #ffff;
   }
-  .sidebar.open input{
+
+  .sidebar.open input {
     padding: 0 20px 0 60px;
     width: 100%;
   }
-  .sidebar .bx-search{
+
+  .sidebar .bx-search {
     position: absolute;
     top: 50%;
     left: 0;
@@ -123,15 +142,18 @@
     background: #125c41;
     color: #FFF;
   }
-  .sidebar.open .bx-search:hover{
+
+  .sidebar.open .bx-search:hover {
     background: #fff;
     color: #125c41;
   }
-  .sidebar .bx-search:hover{
+
+  .sidebar .bx-search:hover {
     background: #fff;
     color: #125c41;
   }
-  .sidebar li a{
+
+  .sidebar li a {
     display: flex;
     height: 100%;
     width: 100%;
@@ -141,10 +163,12 @@
     transition: all 0.4s ease;
     background: #125c41;
   }
-  .sidebar li a:hover{
+
+  .sidebar li a:hover {
     background: #FFF;
   }
-  .sidebar li a .links_name{
+
+  .sidebar li a .links_name {
     color: #fff;
     font-size: 15px;
     font-weight: 400;
@@ -153,22 +177,26 @@
     pointer-events: none;
     transition: 0.4s;
   }
-  .sidebar.open li a .links_name{
+
+  .sidebar.open li a .links_name {
     opacity: 1;
     pointer-events: auto;
   }
+
   .sidebar li a:hover .links_name,
-  .sidebar li a:hover i{
+  .sidebar li a:hover i {
     transition: all 0.5s ease;
     color: #125c41;
   }
-  .sidebar li i{
+
+  .sidebar li i {
     height: 50px;
     line-height: 50px;
     font-size: 18px;
     border-radius: 12px;
   }
-  .sidebar li.profile{
+
+  .sidebar li.profile {
     position: fixed;
     height: 60px;
     width: 78px;
@@ -179,32 +207,38 @@
     transition: all 0.5s ease;
     overflow: hidden;
   }
-  .sidebar.open li.profile{
+
+  .sidebar.open li.profile {
     width: 250px;
   }
-  .sidebar li .profile-details{
+
+  .sidebar li .profile-details {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
   }
-  .sidebar li img{
+
+  .sidebar li img {
     height: 45px;
     width: 45px;
     object-fit: cover;
     border-radius: 6px;
     margin-right: 10px;
   }
+
   .sidebar li.profile .name,
-  .sidebar li.profile .job{
+  .sidebar li.profile .job {
     font-size: 15px;
     font-weight: 400;
     color: #fff;
     white-space: nowrap;
   }
-  .sidebar li.profile .job{
+
+  .sidebar li.profile .job {
     font-size: 12px;
   }
-  .sidebar .profile #log_out{
+
+  .sidebar .profile #log_out {
     position: absolute;
     top: 50%;
     right: 0;
@@ -216,11 +250,13 @@
     border-radius: 0px;
     transition: all 0.5s ease;
   }
-  .sidebar.open .profile #log_out{
+
+  .sidebar.open .profile #log_out {
     width: 50px;
     background: none;
   }
-  .home-section{
+
+  .home-section {
     position: relative;
     background: #E4E9F7;
     min-height: 100vh;
@@ -230,11 +266,13 @@
     transition: all 0.5s ease;
     z-index: 2;
   }
-  .sidebar.open ~ .home-section{
+
+  .sidebar.open~.home-section {
     left: 250px;
     width: calc(100% - 250px);
   }
-  .home-section .text{
+
+  .home-section .text {
     display: inline-block;
     color: #04AA6D;
     font-size: 18px;
@@ -242,7 +280,7 @@
     margin: 18px
   }
 
-  .topbar{
+  .topbar {
     position: relative;
     top: 0;
     width: 100%;
@@ -250,8 +288,54 @@
     background-color: #FFF;
   }
 
+  .tab button {
+    background-color: #ffffff;
+    color: #444;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid #c1c1c1;
+    cursor: pointer;
+    width: 50%;
+  }
 
-  .row{
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #04AA6D;
+    color: #fff;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #04AA6D;
+    color: #fff;
+  }
+
+  /* Style the tab content */
+  .tabs {
+    display: none;
+  }
+
+  .tabs {
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+  }
+
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .row {
     /* width: 50%; */
     margin: 10px auto;
     /* border: 1px solid #ccc; */
@@ -259,15 +343,23 @@
     /* background-color: #fff; */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.h3,.h4,.h5,.h6,h3,h4,h5,h6{
-    margin-top:0;
-    margin-bottom:.5rem;
-    font-weight:500;
-    line-height:1.2;
+  }
+
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
     font-size: 1rem;
     /* color: #333; */
-}
+  }
 
   .main-content {
     width: 30%;
@@ -289,71 +381,63 @@
     /* color: #000000; */
   }
 
-  .text-bg-secondary{
+  .text-bg-secondary {
     color: #fff;
     text-align: center;
     background-color: #04AA6D;
-    
-}
 
-  footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #04AA6D;
-    color: white;
-    text-align: center;
   }
 
-  select,input[type="number"]{
+  select,
+  input[type="number"] {
     width: 100%;
     padding: 14px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
+  }
 
-/* Set a style for all buttons */
-.btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
+  /* Set a style for all buttons */
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
 
-.btn:hover {
-  opacity:1;
-}
+  .btn:hover {
+    opacity: 1;
+  }
 
-/* Extra styles for the cancel button */
-.reset-btn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
+  /* Extra styles for the cancel button */
+  .reset-btn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
 
-/* Float cancel and signup buttons and add an equal width */
-.reset-btn, .hitung-btn {
-  float: left;
-  width: 50%;
-}
+  /* Float cancel and signup buttons and add an equal width */
+  .reset-btn,
+  .hitung-btn {
+    float: left;
+    width: 50%;
+  }
 
-/* Clear floats */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  /* Clear floats */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-#hasil span {
-  font-weight: bold;
-}
+  #hasil span {
+    font-weight: bold;
+  }
 
   @media screen and (max-width: 700px) {
     .sidebar {
@@ -361,21 +445,29 @@
       height: auto;
       position: relative;
     }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+
+    .sidebar a {
+      float: left;
+    }
+
+    div.content {
+      margin-left: 0;
+    }
   }
-  
- 
+
+
   @media screen and (max-width: 420px) {
     .sidebar a {
       text-align: center;
       float: none;
     }
 
-    .reset-btn, .hitung-btn {
+    .reset-btn,
+    .hitung-btn {
       width: 100%;
     }
-    .sidebar li .tooltip{
+
+    .sidebar li .tooltip {
       display: none;
     }
-  }  
+  }
