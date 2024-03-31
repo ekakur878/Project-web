@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "liveServer.settings.multiRootWorkspaceName": "Project-web"
+=======
+    "livePreview.defaultPreviewPath": "/index.html"
+>>>>>>> 922e7ed09731a7830360aba5255f8536c917a5d9
 }
